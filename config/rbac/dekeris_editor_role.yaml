@@ -1,0 +1,24 @@
+# permissions for end users to edit dekeris.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: dekeris-editor-role
+rules:
+- apiGroups:
+  - games.dekeris.github.io
+  resources:
+  - dekeris
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - games.dekeris.github.io
+  resources:
+  - dekeris/status
+  verbs:
+  - get

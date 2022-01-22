@@ -1,0 +1,47 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: dekeris.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Dekeris is the Schema for the dekeris API
+      displayName: Dekeris
+      kind: Dekeris
+      name: dekeris.games.dekeris.github.io
+      version: v1alpha1
+  description: Dekeris
+  displayName: Dekeris
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - dekeris
+  links:
+  - name: Dekeris
+    url: https://dekeris.github.io
+  maintainers:
+  - email: alessiogiovanni.baroni@gmail.com'
+    name: '''Alessio G. Baroni'
+  maturity: alpha
+  provider:
+    name: Self
+  version: 0.0.0

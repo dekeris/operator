@@ -1,0 +1,6 @@
+apiVersion: games.dekeris.github.io/v1alpha1
+kind: Dekeris
+metadata:
+  name: dekeris-sample
+spec:
+  # Add fields here
